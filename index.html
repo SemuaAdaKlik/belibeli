@@ -1629,6 +1629,7 @@
 
             <div class="category-filters">
                 <button class="category-btn active" onclick="filterGallery('all')">Semua Produk</button>
+				<button class="category-btn" onclick="filterGallery('laundry')">Laundry</button>
                 <button class="category-btn" onclick="filterGallery('madu')">Madu</button>
                 <button class="category-btn" onclick="filterGallery('minuman')">Minuman</button>
                 <button class="category-btn" onclick="filterGallery('beras')">Beras</button>
@@ -1775,6 +1776,33 @@
 		// DATA PRODUK / PRODUCT GALLERY
 		// ============================================
 		const productGallery = [
+			// Laundry
+			{
+				id: 'laundry-1',
+				category: 'laundry',
+				title: 'Laundry',
+				description: [
+					'Laundry Biasa',
+					'Laundry Kilat',
+					'Laundry Express'
+				],
+				price: 5000,
+				unit: 'kg',
+				image: 'images/laundry/laundry1.jpg',
+				fallbackEmoji: '🎁',
+				stock: 'available',
+				stockCount: 50,
+				isPromo: false,
+				isNew: true,
+				videoUrl: '',
+				hasVideo: false,
+				photos: [
+					{ url: 'images/laundry/laundry2.jpg', caption: 'Setrika Listrik' },
+					{ url: 'images/laundry/laundry3.jpg', caption: 'Setrika Uap' },
+					{ url: 'images/laundry/laundry4.jpg', caption: 'Sistem Pengeringan Gas' }
+				]
+			},
+			
 			// Madu
 			{
 				id: 'madu-1',
