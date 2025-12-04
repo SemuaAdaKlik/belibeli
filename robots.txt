@@ -1,0 +1,24 @@
+# robots.txt untuk SemuaAda
+# URL: https://semuaadaklik.github.io/belibeli/
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Khusus untuk Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Khusus untuk Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Lokasi Sitemap
+Sitemap: https://semuaadaklik.github.io/belibeli/sitemap.xml
+
+# Informasi Tambahan
+# Host: semuaadaklik.github.io
+# Lokasi: Kulon Progo, Yogyakarta, Indonesia
