@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SemuaAda - Belanja Mudah & Lengkap</title>
     
-    <!-- Google Analytics 4 (GA4) -->
+    <!-- SEO Meta Tags -->
+    <title>SemuaAda - Belanja Mudah Madu, Beras, Telur & Kebutuhan Pokok di Kulon Progo</title>
+    <meta name="description" content="SemuaAda menyediakan madu asli, beras berkualitas, telur segar, dan kebutuhan pokok lengkap di Kulon Progo. Pesan mudah via WhatsApp, harga terjangkau, pengiriman cepat!">
+    <meta name="keywords" content="semuaada, belanja online kulon progo, madu asli kulon progo, beras murah jogja, telur segar, kebutuhan pokok, toko sembako online, envella madu kita, belanja mudah yogyakarta">
+    <meta name="author" content="SemuaAda">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://semuaadaklik.github.io/belibeli/">
+    
+    <!-- Geo Location Tags -->
+    <meta name="geo.region" content="ID-YO">
+    <meta name="geo.placename" content="Kulon Progo">
+    <meta name="geo.position" content="-7.868438;110.185233">
+    <meta name="ICBM" content="-7.868438, 110.185233">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://semuaadaklik.github.io/belibeli/">
+    <meta property="og:title" content="SemuaAda - Belanja Mudah & Lengkap di Kulon Progo">
+    <meta property="og:description" content="Madu asli, beras berkualitas, telur segar & kebutuhan pokok lengkap. Pesan via WhatsApp, pengiriman cepat!">
+    <meta property="og:image" content="https://semuaadaklik.github.io/belibeli/images/og-image.jpg">
+    <meta property="og:locale" content="id_ID">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://semuaadaklik.github.io/belibeli/">
+    <meta name="twitter:title" content="SemuaAda - Belanja Mudah & Lengkap">
+    <meta name="twitter:description" content="Madu asli, beras berkualitas, telur segar & kebutuhan pokok lengkap di Kulon Progo">
+    <meta name="twitter:image" content="https://semuaadaklik.github.io/belibeli/images/twitter-image.jpg">
+    
+    <!-- Structured Data - LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SemuaAda",
+      "description": "Toko online kebutuhan pokok lengkap di Kulon Progo",
+      "url": "https://semuaadaklik.github.io/belibeli/",
+      "logo": "https://semuaadaklik.github.io/belibeli/images/logo.png",
+      "image": "https://semuaadaklik.github.io/belibeli/images/og-image.jpg",
+      "telephone": "+62-812-9683-690",
+      "email": "ekokus.djogja@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Raya Jogja - Wates KM 25",
+        "addressLocality": "Kedungsari",
+        "addressRegion": "Kulon Progo",
+        "addressCountry": "ID",
+        "postalCode": "55611"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-7.868438",
+        "longitude": "110.185233"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "priceRange": "Rp 10.000 - Rp 100.000",
+      "currenciesAccepted": "IDR",
+      "paymentAccepted": "Cash, Transfer Bank"
+    }
+    </script>
+    
+    <!-- Structured Data - Product Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Envella Madu Kita - Madu Multiflora Asli",
+      "description": "Madu asli, murni dan alami dari multiflora",
+      "image": "https://semuaadaklik.github.io/belibeli/images/madu/madu-envella-1.jpg",
+      "brand": {"@type": "Brand", "name": "Envella"},
+      "offers": {
+        "@type": "Offer",
+        "price": "55000",
+        "priceCurrency": "IDR",
+        "availability": "https://schema.org/InStock",
+        "seller": {"@type": "Organization", "name": "SemuaAda"}
+      }
+    }
+    </script>
+    
+    <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JE5G9Y7YPR"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -81,7 +165,6 @@
             padding: 0 20px;
         }
 
-        /* Header */
         .header {
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
@@ -178,7 +261,6 @@
             transform: translateY(-2px);
         }
 
-        /* Cart Button */
         .cart-button {
             position: relative;
             background: linear-gradient(135deg, #667eea, #764ba2);
@@ -229,12 +311,30 @@
             font-size: 1.1rem;
         }
 
-        /* Hero Section */
         .hero {
             margin-top: 100px;
-            padding: 4rem 0;
+            padding: 5rem 0;
             text-align: center;
             color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            animation: heroAnimation 20s ease-in-out infinite;
+        }
+        
+        @keyframes heroAnimation {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.1); }
         }
 
         .hero h1 {
@@ -243,17 +343,146 @@
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
             animation: fadeInUp 1s ease-out;
             font-weight: 800;
+            position: relative;
+            z-index: 1;
         }
 
         .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
             opacity: 0.95;
             animation: fadeInUp 1s ease-out 0.2s both;
             font-weight: 500;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 2rem;
+            animation: fadeInUp 1s ease-out 0.4s both;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-button {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .cta-primary {
+            background: white;
+            color: #667eea;
+            box-shadow: 0 5px 20px rgba(255,255,255,0.3);
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255,255,255,0.4);
+        }
+        
+        .cta-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+            backdrop-filter: blur(10px);
+        }
+        
+        .cta-secondary:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-3px);
+        }
+        
+        /* ============================================
+		   HERO STATS - Label di Bawah Angka
+		   ============================================ */
+
+		.hero-stats {
+			display: flex;
+			justify-content: center;
+			gap: 50px;
+			margin-top: 3rem;
+			animation: fadeInUp 1s ease-out 0.6s both;
+			position: relative;
+			z-index: 1;
+			opacity: 0;
+			transform: translateY(20px);
+		}
+        
+        /* Stat Item - Flex Column untuk vertical layout */
+		.stat-item {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 8px;
+			transition: transform 0.3s ease;
+			cursor: default;
+			min-width: 150px;
+		}
+
+		/* Stat Number - Angka besar di atas */
+		.stat-number {
+			font-size: 2.5rem;
+			font-weight: 800;
+			display: block;
+			margin-bottom: 0px;
+			font-variant-numeric: tabular-nums;
+			min-width: 80px;
+			transition: all 0.3s ease;
+			text-align: center;
+			position: relative;
+		}
+
+		/* Stat Label - Keterangan di bawah */
+		.stat-label {
+			font-size: 1rem;
+			opacity: 0.9;
+			display: block;
+			text-align: center;
+			line-height: 1.3;
+			max-width: 150px;
+			margin-top: 5px;
+		}
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.8s both;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .trust-badge {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .trust-badge-icon {
+            font-size: 1.5rem;
         }
 
-        /* Gallery Section */
         .gallery-section {
             padding: 3rem 0;
             background: rgba(255, 255, 255, 0.95);
@@ -308,7 +537,6 @@
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
-            position: relative;
         }
 
         .gallery-item:hover {
@@ -357,7 +585,6 @@
             background: #667eea;
             color: white;
             transform: scale(1.1) rotate(5deg);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
         }
 
         .badges-container {
@@ -464,8 +691,6 @@
             content: "✅";
             position: absolute;
             left: 0;
-            color: #28a745;
-            font-weight: bold;
             font-size: 0.8rem;
         }
 
@@ -505,9 +730,6 @@
             font-size: 16px;
             font-weight: bold;
             transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         .quantity-btn:hover {
@@ -522,8 +744,6 @@
             border: 2px solid #667eea;
             border-radius: 8px;
             font-weight: bold;
-            background: white;
-            color: #333;
         }
 
         .add-to-cart-btn {
@@ -552,11 +772,8 @@
         .add-to-cart-btn:disabled {
             background: #ccc;
             cursor: not-allowed;
-            transform: none;
-            box-shadow: none;
         }
 
-        /* Features Section */
         .features {
             padding: 4rem 0;
             background: white;
@@ -603,12 +820,6 @@
             font-size: 1.3rem;
         }
 
-        .feature-card p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* Cart Modal */
         .cart-modal {
             display: none;
             position: fixed;
@@ -637,12 +848,10 @@
             position: absolute;
             top: 15px;
             right: 25px;
-            color: #aaa;
-            float: right;
             font-size: 28px;
             font-weight: bold;
             cursor: pointer;
-            z-index: 1001;
+            color: #aaa;
         }
 
         .close:hover {
@@ -688,6 +897,11 @@
             background: #e8f5e8;
         }
 
+        .admin-card.admin-offline {
+            opacity: 0.7;
+            border-color: #ffcccc;
+        }
+
         .admin-name {
             font-weight: bold;
             color: #333;
@@ -702,8 +916,25 @@
 
         .admin-status {
             font-size: 0.8rem;
-            color: #28a745;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .admin-status.online {
+            color: #28a745;
+        }
+
+        .admin-status.offline {
+            color: #dc3545;
+        }
+
+        .admin-last-online {
+            font-size: 0.75rem;
+            color: #999;
+            margin-top: 3px;
         }
 
         .cart-item {
@@ -1108,6 +1339,182 @@
         .hidden {
             display: none;
         }
+		
+		/* ============================================
+		   COUNTER ANIMATION STYLES
+		   ============================================ */
+
+		/* Stat Number - Angka tidak bergeser saat berubah */
+		.stat-number {
+			display: inline-block;
+			font-variant-numeric: tabular-nums; /* Monospace numbers */
+			min-width: 80px; /* Cegah layout shift */
+			transition: all 0.3s ease;
+			text-align: center;
+		}
+
+		/* Hero Stats - Fade in animation */
+		.hero-stats {
+			opacity: 0;
+			transform: translateY(20px);
+			animation: fadeInUp 0.8s ease-out 0.6s forwards;
+		}
+
+		/* Setelah animated, tambahkan subtle pulse */
+		.hero-stats.animated .stat-number {
+			animation: subtlePulse 3s ease-in-out infinite;
+		}
+
+		@keyframes subtlePulse {
+			0%, 100% { transform: scale(1); }
+			50% { transform: scale(1.05); }
+		}
+
+		@keyframes fadeInUp {
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		/* Individual stat item hover effect */
+		.stat-item {
+			transition: transform 0.3s ease;
+			cursor: default;
+		}
+
+		.stat-item:hover {
+			transform: translateY(-5px);
+		}
+
+		/* Hover effect untuk angka */
+		.stat-item:hover .stat-number {
+			color: #fff;
+			text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+			transform: scale(1.1);
+		}
+		
+		.stat-item:hover .stat-icon {
+			transform: scale(1.2) translateY(-5px);
+			filter: drop-shadow(0 4px 8px rgba(255,255,255,0.4));
+		}
+
+		.stat-item:hover .stat-label {
+			opacity: 1;
+		}
+		
+		/* Loading state (optional) */
+		.stat-number.counting {
+			color: rgba(255, 255, 255, 0.8);
+		}
+
+		.stat-number.counting::after {
+			content: '';
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.5);
+			animation: blink 1s infinite;
+			margin-left: 5px;
+		}
+
+		@keyframes blink {
+			0%, 100% { opacity: 0; }
+			50% { opacity: 1; }
+		}
+
+		/* ============================================
+		   MOBILE RESPONSIVE
+		   ============================================ */
+
+		@media (max-width: 768px) {
+			.hero-stats {
+				flex-direction: column;
+				gap: 40px;
+				margin-top: 2rem;
+			}
+			
+			.stat-item {
+				min-width: 100%;
+				gap: 8px;
+			}
+			
+			.stat-icon {
+				font-size: 2rem;
+			}
+			
+			.stat-number {
+				font-size: 2rem;
+				min-width: 60px;
+			}
+			
+			.stat-label {
+				font-size: 0.9rem;
+				max-width: 100%;
+			}
+			
+			.hero-cta {
+				flex-direction: column;
+				align-items: center;
+			}
+			
+			.cta-button {
+				width: 100%;
+				max-width: 300px;
+				justify-content: center;
+			}
+			
+			.trust-badges {
+				flex-direction: column;
+				align-items: center;
+				gap: 15px;
+			}
+			
+			.trust-badge {
+				width: 100%;
+				max-width: 300px;
+				justify-content: center;
+			}
+		}
+		
+		/* ============================================
+		   OPTIONAL: Separator Line antara Angka & Label
+		   ============================================ */
+
+		/* Uncomment jika ingin garis pemisah */
+		.stat-number::after {
+			content: '';
+			width: 50px;
+			height: 2px;
+			background: rgba(255, 255, 255, 0.4);
+			display: block;
+			margin: 10px auto 5px auto; /* Jarak atas 10px, bawah 5px */
+			transition: all 0.3s ease;
+		}
+		
+		.stat-item:hover .stat-number::after {
+			width: 70px;
+			background: rgba(255, 255, 255, 0.8);
+		}
+
+		/* ============================================
+		   OPTIONAL: Icon di atas Angka
+		   ============================================ */
+
+		/* Jika ingin tambahkan icon di atas angka */
+		.stat-icon {
+			font-size: 2.5rem;
+			margin-bottom: 5px;
+			opacity: 0.9;
+			filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+			animation: iconFloat 3s ease-in-out infinite;
+		}
+		
+		@keyframes iconFloat {
+			0%, 100% { transform: translateY(0px); }
+			50% { transform: translateY(-5px); }
+		}
     </style>
 </head>
 <body>
@@ -1159,11 +1566,62 @@
     </header>
 
     <section class="hero" id="beranda">
-        <div class="container">
-            <h1>Selamat Datang di SemuaAda</h1>
-            <p>Belanja mudah, lengkap, dan terpercaya - Semua ada di sini!</p>
-        </div>
-    </section>
+		<div class="container">
+			<h1>🛒 SemuaAda - Belanja Mudah & Lengkap</h1>
+			<p>Madu Asli, Beras Berkualitas, Telur Segar & Kebutuhan Pokok Terlengkap</p>
+			
+			<div class="hero-cta">
+				<a href="#galeri" class="cta-button cta-primary">🛍️ Lihat Produk</a>
+				<a href="#kontak" class="cta-button cta-secondary">📞 Hubungi Kami</a>
+			</div>
+			
+			<div class="hero-stats">
+				<div class="stat-item">
+					<span class="stat-icon">📦</span>
+					<span class="stat-number" 
+						  data-target="100" 
+						  data-suffix="+" 
+						  data-duration="2000">0+</span>
+					<span class="stat-label">Produk Tersedia</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-icon">😊</span>
+					<span class="stat-number" data-target="500" data-suffix="+" data-duration="2500">0+</span>
+					<span class="stat-label">Pelanggan Puas</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-icon">💬</span>
+					<span class="stat-number" data-target="24" data-suffix="/7" data-duration="1500">0/7</span>
+					<span class="stat-label">Layanan WhatsApp</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-icon">⭐</span>
+					<span class="stat-number" data-target="98" data-suffix="%" data-duration="2000">0%</span>
+					<span class="stat-label">Rating</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-icon">👥</span>
+					<span class="stat-number" data-target="5" data-suffix="K+" data-duration="2000">0K+</span>
+					<span class="stat-label">Followers</span>
+				</div>
+			</div>
+			
+			<div class="trust-badges">
+				<div class="trust-badge">
+					<span class="trust-badge-icon">✅</span>
+					<span>Produk 100% Asli</span>
+				</div>
+				<div class="trust-badge">
+					<span class="trust-badge-icon">🚚</span>
+					<span>Pengiriman Cepat</span>
+				</div>
+				<div class="trust-badge">
+					<span class="trust-badge-icon">💯</span>
+					<span>Harga Terjangkau</span>
+				</div>
+			</div>
+		</div>
+	</section>
 
     <section class="gallery-section" id="galeri">
         <div class="container">
@@ -1226,13 +1684,13 @@
                 </div>
                 <div class="contact-item">
                     <h3>📞 Telepon</h3>
-                    <p>+62 812-9683-690</p>
                     <p>+62 813-2826-7973</p>
+                    <p>+62 812-9683-690</p>
                 </div>
                 <div class="contact-item">
                     <h3>✉️ Email</h3>
-                    <p>ekokus.djogja@gmail.com</p>
                     <p>aptipurwaningtyas@gmail.com</p>
+                    <p>ekokus.djogja@gmail.com</p>
                 </div>
             </div>
         </div>
@@ -1291,446 +1749,594 @@
     </div>
 
     <script>
-        // Data admin WhatsApp
-        const adminList = [
-            {
-                id: 'admin-1',
-                name: 'Apti',
-                phone: '6281328267973',
-                status: 'Online',
-                role: 'Admin Penjualan'
-            }
-        ];
+        // ============================================
+		// DATA ADMIN WHATSAPP
+		// ============================================
+		const adminList = [
+			{
+				id: 'admin-1',
+				name: 'Apti',
+				phone: '6281328267973',
+				status: 'online', // 'online' atau 'offline'
+				role: 'Admin Penjualan',
+				lastOnline: null
+			},
+			{
+				id: 'admin-2',
+				name: 'Eko',
+				phone: '628129683690',
+				status: 'offline',
+				role: 'Admin Penjualan',
+				lastOnline: '3 jam yang lalu'
+			}
+		];
 
-        // Data produk dengan deskripsi terstruktur dan link video
-        const productGallery = [
-            // Madu
-            {
-                id: 'madu-1',
-                category: 'madu',
-                title: 'Envella Madu Kita',
-                description: [
-                    'Madu Multiflora',
-                    'Madu Asli, Murni & Alami'
-                ],
-                price: 55000,
-                unit: 'botol',
-                image: 'images/madu/madu-envella-1.jpg',
-                fallbackEmoji: '🍯',
-                stock: 'available',
-                stockCount: 50,
-                isPromo: false,
-                isNew: true,
-                videoUrl: '',
-                hasVideo: false,
-                photos: [
-                    { url: 'images/madu/madu-envella-1.jpg', caption: 'Madu Multiflora' }
-                ]
-            },
-            {
-                id: 'madu-2',
-                category: 'madu',
-                title: 'Envella Madu Kita + Be Pollen',
-                description: [
-                    'Madu + butiran be pollen',
-                    'Madu Multiflora',
-                    'Madu Asli, Murni & Alami'
-                ],
-                price: 55000,
-                unit: 'botol',
-                image: 'images/madu/madu-envella-2.jpg',
-                fallbackEmoji: '🍯',
-                stock: 'available',
-                stockCount: 50,
-                isPromo: false,
-                isNew: true,
-                videoUrl: '',
-                hasVideo: false,
-                photos: [
-                    { url: 'images/madu/madu-envella-2.jpg', caption: 'Madu + Be Pollen' }
-                ]
-            }, 
+		// ============================================
+		// DATA PRODUK / PRODUCT GALLERY
+		// ============================================
+		const productGallery = [
+			// Madu
+			{
+				id: 'madu-1',
+				category: 'madu',
+				title: 'Envella Madu Kita',
+				description: [
+					'Madu Multiflora',
+					'Madu Asli, Murni & Alami'
+				],
+				price: 55000,
+				unit: 'botol',
+				image: 'images/madu/madu-envella-1.jpg',
+				fallbackEmoji: '🍯',
+				stock: 'available',
+				stockCount: 50,
+				isPromo: false,
+				isNew: true,
+				videoUrl: '',
+				hasVideo: false,
+				photos: [
+					{ url: 'images/madu/madu-envella-1.jpg', caption: 'Madu Multiflora' }
+				]
+			},
+			{
+				id: 'madu-2',
+				category: 'madu',
+				title: 'Envella Madu Kita + Be Pollen',
+				description: [
+					'Madu + butiran be pollen',
+					'Madu Multiflora',
+					'Madu Asli, Murni & Alami'
+				],
+				price: 55000,
+				unit: 'botol',
+				image: 'images/madu/madu-envella-2.jpg',
+				fallbackEmoji: '🍯',
+				stock: 'available',
+				stockCount: 50,
+				isPromo: false,
+				isNew: true,
+				videoUrl: '',
+				hasVideo: false,
+				photos: [
+					{ url: 'images/madu/madu-envella-2.jpg', caption: 'Madu + Be Pollen' }
+				]
+			}, 
 
-            // Minuman
-            {
-                id: 'minuman-1',
-                category: 'minuman',
-                title: 'Minuman Lidah Buaya',
-                description: [
-                    'Minuman olahan Lidah Buaya',
-                    'Minuman segar alami kaya manfaat'
-                ],
-                price: 10000,
-                unit: 'botol',
-                image: 'images/minuman/minuman-lidah_buaya.jpg',
-                fallbackEmoji: '🥤',
-                stock: 'available',
-                stockCount: 50,
-                isPromo: false,
-                isNew: true,
-                videoUrl: '',
-                hasVideo: false,
-                photos: [
-                    { url: 'images/minuman/minuman-lidah_buaya.jpg', caption: 'Minuman Lidah Buaya botol' }
-                ]
-            }
-        ];
+			// Minuman
+			{
+				id: 'minuman-1',
+				category: 'minuman',
+				title: 'Minuman Lidah Buaya',
+				description: [
+					'Minuman olahan Lidah Buaya',
+					'Minuman segar alami kaya manfaat'
+				],
+				price: 10000,
+				unit: 'botol',
+				image: 'images/minuman/minuman-lidah_buaya.jpg',
+				fallbackEmoji: '🥤',
+				stock: 'available',
+				stockCount: 50,
+				isPromo: false,
+				isNew: true,
+				videoUrl: '',
+				hasVideo: false,
+				photos: [
+					{ url: 'images/minuman/minuman-lidah_buaya.jpg', caption: 'Minuman Lidah Buaya botol' }
+				]
+			}
+		];
 
-        // State management menggunakan memori JavaScript
-        let cart = [];
-        let selectedAdminPhone = adminList[0].phone;
-        
-        const cartCountDesktop = document.getElementById('cartCountDesktop');
-        const cartCountMobile = document.getElementById('cartCountMobile');
-        const cartItemsContainer = document.getElementById('cartItemsContainer');
-        const cartTotalAmount = document.getElementById('cartTotalAmount');
-        const emptyCartMessage = document.getElementById('emptyCartMessage');
-        const cartModal = document.getElementById('cartModal');
-        const notification = document.getElementById('notification');
-        const galleryModal = document.getElementById('galleryModal');
+		// ============================================
+		// STATE MANAGEMENT
+		// ============================================
+		let cart = [];
+		let selectedAdminPhone = adminList[0].phone; // Default ke admin pertama
 
-        function updateCartCount() {
-            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-            cartCountDesktop.innerText = totalItems;
-            cartCountMobile.innerText = totalItems;
-        }
+		const cartCountDesktop = document.getElementById('cartCountDesktop');
+		const cartCountMobile = document.getElementById('cartCountMobile');
+		const cartItemsContainer = document.getElementById('cartItemsContainer');
+		const cartTotalAmount = document.getElementById('cartTotalAmount');
+		const emptyCartMessage = document.getElementById('emptyCartMessage');
+		const cartModal = document.getElementById('cartModal');
+		const notification = document.getElementById('notification');
+		const galleryModal = document.getElementById('galleryModal');
 
-        function formatRupiah(number) {
-            return new Intl.NumberFormat('id-ID', { 
-                style: 'currency', 
-                currency: 'IDR', 
-                minimumFractionDigits: 0 
-            }).format(number);
-        }
+		// ============================================
+		// UTILITY FUNCTIONS
+		// ============================================
+		function updateCartCount() {
+			const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+			cartCountDesktop.innerText = totalItems;
+			cartCountMobile.innerText = totalItems;
+		}
 
-        function showNotification(message, isError = false) {
-            const notificationText = document.getElementById('notificationText');
-            notificationText.innerText = message;
-            notification.className = `notification ${isError ? 'error' : ''} show`;
-            
-            setTimeout(() => {
-                notification.classList.remove('show');
-            }, 3000);
-        }
+		function formatRupiah(number) {
+			return new Intl.NumberFormat('id-ID', { 
+				style: 'currency', 
+				currency: 'IDR', 
+				minimumFractionDigits: 0 
+			}).format(number);
+		}
 
-        function getBadges(product) {
-            let badges = '';
-            
-            if (product.stockCount === 0 || product.stock === 'out') {
-                badges += '<div class="badge stock-badge stock-out">Habis</div>';
-            } else if (product.stockCount <= 10 || product.stock === 'low') {
-                badges += '<div class="badge stock-badge stock-low">Stok Terbatas</div>';
-            } else {
-                badges += '<div class="badge stock-badge stock-available">Tersedia</div>';
-            }
-            
-            if (product.isPromo) {
-                badges += '<div class="badge promo-badge">PROMO</div>';
-            }
-            
-            if (product.isNew) {
-                badges += '<div class="badge new-badge">BARU</div>';
-            }
-            
-            return badges;
-        }
-        
-        function openGallery(productId) {
-            const product = productGallery.find(p => p.id === productId);
-            if (!product) return;
+		function showNotification(message, isError = false) {
+			const notificationText = document.getElementById('notificationText');
+			notificationText.innerText = message;
+			notification.className = `notification ${isError ? 'error' : ''} show`;
+			
+			setTimeout(() => {
+				notification.classList.remove('show');
+			}, 3000);
+		}
 
-            document.getElementById('galleryTitle').innerText = `Galeri Foto - ${product.title}`;
-            document.getElementById('gallerySubtitle').innerText = `${product.category.toUpperCase()} | ${formatRupiah(product.price)}/${product.unit}`;
-            
-            const photoGalleryGrid = document.getElementById('photoGalleryGrid');
-            photoGalleryGrid.innerHTML = '';
-            
-            const photos = product.photos || [];
-            
-            if (photos.length === 0) {
-                photoGalleryGrid.innerHTML = '<div class="gallery-empty"><div class="gallery-empty-icon">📷</div><p>Belum ada foto galeri untuk produk ini</p></div>';
-            } else {
-                photos.forEach((photo, index) => {
-                    const photoItem = document.createElement('div');
-                    photoItem.className = 'photo-gallery-item';
-                    photoItem.innerHTML = `
-                        <img src="${photo.url}" alt="${product.title} - Foto ${index + 1}" 
-                             onerror="this.parentElement.innerHTML='<div style=\\'padding: 80px 20px; text-align: center; color: #999; background: #f8f9fa;\\'>📷<br>Foto tidak tersedia</div>'">
-                        <div class="photo-gallery-item-info">
-                            <h4>Foto ${index + 1}</h4>
-                            <p>${photo.caption}</p>
-                        </div>
-                    `;
-                    photoGalleryGrid.appendChild(photoItem);
-                });
-            }
-            galleryModal.style.display = 'block';
-        }
+		function getBadges(product) {
+			let badges = '';
+			
+			if (product.stockCount === 0 || product.stock === 'out') {
+				badges += '<div class="badge stock-badge stock-out">Habis</div>';
+			} else if (product.stockCount <= 10 || product.stock === 'low') {
+				badges += '<div class="badge stock-badge stock-low">Stok Terbatas</div>';
+			} else {
+				badges += '<div class="badge stock-badge stock-available">Tersedia</div>';
+			}
+			
+			if (product.isPromo) {
+				badges += '<div class="badge promo-badge">PROMO</div>';
+			}
+			
+			if (product.isNew) {
+				badges += '<div class="badge new-badge">BARU</div>';
+			}
+			
+			return badges;
+		}
 
-        function closeGallery() {
-            galleryModal.style.display = 'none';
-        }
+		// ============================================
+		// ADMIN SELECTION FUNCTIONS
+		// ============================================
+		function renderAdminSelection() {
+			const adminGrid = document.getElementById('adminGrid');
+			adminGrid.innerHTML = '';
+			
+			const onlineAdmins = adminList.filter(admin => admin.status === 'online');
+			
+			// Auto-select admin online jika yang dipilih offline
+			const selectedAdmin = adminList.find(admin => admin.phone === selectedAdminPhone);
+			if (selectedAdmin && selectedAdmin.status === 'offline' && onlineAdmins.length > 0) {
+				selectedAdminPhone = onlineAdmins[0].phone;
+				showNotification(`Admin ${selectedAdmin.name} sedang offline. Dialihkan ke ${onlineAdmins[0].name} yang online.`, false);
+			}
+			
+			adminList.forEach(admin => {
+				const adminCard = document.createElement('div');
+				const isSelected = selectedAdminPhone === admin.phone;
+				const isOnline = admin.status === 'online';
+				
+				adminCard.className = `admin-card ${isSelected ? 'selected' : ''} ${!isOnline ? 'admin-offline' : ''}`;
+				adminCard.onclick = () => selectAdmin(admin.phone, admin.status, admin.name);
+				
+				const statusIcon = isOnline ? '🟢' : '🔴';
+				const statusText = isOnline ? 'Online' : 'Offline';
+				const lastOnlineHtml = !isOnline && admin.lastOnline 
+					? `<div class="admin-last-online">Terakhir: ${admin.lastOnline}</div>` 
+					: '';
+				
+				adminCard.innerHTML = `
+					<div class="admin-name">${admin.name}</div>
+					<div class="admin-phone">${admin.role}</div>
+					<div class="admin-status ${admin.status}">${statusIcon} ${statusText}</div>
+					${lastOnlineHtml}
+				`;
+				adminGrid.appendChild(adminCard);
+			});
+		}
 
-        function changeQuantity(productId, change) {
-            const quantityInput = document.getElementById(`quantity-${productId}`);
-            let currentQuantity = parseInt(quantityInput.value);
-            const product = productGallery.find(p => p.id === productId);
-            
-            currentQuantity += change;
-            if (currentQuantity < 1) {
-                currentQuantity = 1;
-            }
-            if (currentQuantity > product.stockCount) {
-                currentQuantity = product.stockCount;
-                showNotification(`Stok ${product.title} hanya tersisa ${product.stockCount}`, true);
-            }
-            quantityInput.value = currentQuantity;
-        }
+		function selectAdmin(phone, status, name) {
+			if (status === 'offline') {
+				const onlineAdmins = adminList.filter(admin => admin.status === 'online');
+				if (onlineAdmins.length > 0) {
+					showNotification(`⚠️ ${name} sedang offline. Sebaiknya pilih admin yang online: ${onlineAdmins.map(a => a.name).join(', ')}`, true);
+				} else {
+					showNotification(`⚠️ ${name} sedang offline. Pesan Anda mungkin tidak langsung dibalas.`, true);
+				}
+			}
+			selectedAdminPhone = phone;
+			renderAdminSelection();
+		}
 
-        function addToCart(productId) {
-            const product = productGallery.find(p => p.id === productId);
-            const quantityInput = document.getElementById(`quantity-${productId}`);
-            const quantity = parseInt(quantityInput.value);
-            
-            if (product.stockCount === 0) {
-                showNotification('Produk ini sedang habis', true);
-                return;
-            }
-            
-            if (quantity > product.stockCount) {
-                showNotification(`Stok ${product.title} hanya tersisa ${product.stockCount}`, true);
-                return;
-            }
-            
-            const existingItem = cart.find(item => item.id === productId);
-            
-            if (existingItem) {
-                const newQuantity = existingItem.quantity + quantity;
-                if (newQuantity > product.stockCount) {
-                    showNotification(`Total tidak boleh melebihi stok yang tersedia (${product.stockCount})`, true);
-                    return;
-                }
-                existingItem.quantity = newQuantity;
-            } else {
-                cart.push({
-                    id: productId,
-                    title: product.title,
-                    price: product.price,
-                    unit: product.unit,
-                    quantity: quantity,
-                    image: product.image,
-                    fallbackEmoji: product.fallbackEmoji
-                });
-            }
-            
-            updateCartCount();
-            showNotification(`${quantity} ${product.unit} ${product.title} ditambahkan ke keranjang!`);
-            quantityInput.value = 1;
-            
-            trackAddToCart(product.title, product.category, product.price, quantity);
-        }
+		// ============================================
+		// GALLERY FUNCTIONS
+		// ============================================
+		function openGallery(productId) {
+			const product = productGallery.find(p => p.id === productId);
+			if (!product) return;
 
-        function renderAdminSelection() {
-            const adminGrid = document.getElementById('adminGrid');
-            adminGrid.innerHTML = '';
-            adminList.forEach(admin => {
-                const adminCard = document.createElement('div');
-                adminCard.className = `admin-card ${selectedAdminPhone === admin.phone ? 'selected' : ''}`;
-                adminCard.onclick = () => selectAdmin(admin.phone);
-                adminCard.innerHTML = `
-                    <div class="admin-name">${admin.name}</div>
-                    <div class="admin-phone">${admin.role}</div>
-                    <div class="admin-status">${admin.status}</div>
-                `;
-                adminGrid.appendChild(adminCard);
-            });
-        }
+			document.getElementById('galleryTitle').innerText = `Galeri Foto - ${product.title}`;
+			document.getElementById('gallerySubtitle').innerText = `${product.category.toUpperCase()} | ${formatRupiah(product.price)}/${product.unit}`;
+			
+			const photoGalleryGrid = document.getElementById('photoGalleryGrid');
+			photoGalleryGrid.innerHTML = '';
+			
+			const photos = product.photos || [];
+			
+			if (photos.length === 0) {
+				photoGalleryGrid.innerHTML = '<div class="gallery-empty"><div class="gallery-empty-icon">📷</div><p>Belum ada foto galeri untuk produk ini</p></div>';
+			} else {
+				photos.forEach((photo, index) => {
+					const photoItem = document.createElement('div');
+					photoItem.className = 'photo-gallery-item';
+					photoItem.innerHTML = `
+						<img src="${photo.url}" alt="${product.title} - Foto ${index + 1}" 
+							 onerror="this.parentElement.innerHTML='<div style=\\'padding: 80px 20px; text-align: center; color: #999; background: #f8f9fa;\\'>📷<br>Foto tidak tersedia</div>'">
+						<div class="photo-gallery-item-info">
+							<h4>Foto ${index + 1}</h4>
+							<p>${photo.caption}</p>
+						</div>
+					`;
+					photoGalleryGrid.appendChild(photoItem);
+				});
+			}
+			galleryModal.style.display = 'block';
+		}
 
-        function selectAdmin(phone) {
-            selectedAdminPhone = phone;
-            renderAdminSelection();
-        }
+		function closeGallery() {
+			galleryModal.style.display = 'none';
+		}
 
-        function renderGallery(filter = 'all') {
-            const galleryGrid = document.getElementById('galleryGrid');
-            galleryGrid.innerHTML = '';
-            
-            const filteredProducts = filter === 'all' 
-                ? productGallery 
-                : productGallery.filter(product => product.category === filter);
-            
-            if (filter !== 'all') {
-                trackCategoryFilter(filter);
-            }
-            
-            filteredProducts.forEach(product => {
-                const galleryItem = document.createElement('div');
-                galleryItem.className = 'gallery-item';
-                galleryItem.dataset.category = product.category;
-                
-                const isOutOfStock = product.stockCount === 0;
-                
-                const descriptionHtml = `
-                    <ul class="description-list">
-                        ${product.description.map(desc => `<li>${desc}</li>`).join('')}
-                    </ul>
-                `;
-                
-                galleryItem.innerHTML = `
-                    <div class="gallery-item-image">
-                        <img src="${product.image}" alt="${product.title}" 
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="product-image-placeholder" style="display: none; font-size: 4rem; color: #adb5bd; display: flex; align-items: center; justify-content: center; height: 100%;">${product.fallbackEmoji}</div>
-                        <div class="badges-container">${getBadges(product)}</div>
-                        <button class="photo-gallery-btn" onclick="openGallery('${product.id}')" title="Lihat Galeri Foto">📷</button>
-                    </div>
-                    <div class="gallery-item-content">
-                        <div class="item-category">${product.category}</div>
-                        <h3 class="item-title">${product.title}</h3>
-                        <div class="item-description">
-                            ${descriptionHtml}
-                        </div>
-                        <div class="item-price">${formatRupiah(product.price)}/${product.unit}</div>
-                        <div class="quantity-selector">
-                            <span class="quantity-label">Jumlah:</span>
-                            <div class="quantity-controls">
-                                <button class="quantity-btn" onclick="changeQuantity('${product.id}', -1)" ${isOutOfStock ? 'disabled' : ''}>-</button>
-                                <input type="number" id="quantity-${product.id}" value="1" min="1" max="${product.stockCount}" class="quantity-input" ${isOutOfStock ? 'disabled' : ''}>
-                                <button class="quantity-btn" onclick="changeQuantity('${product.id}', 1)" ${isOutOfStock ? 'disabled' : ''}>+</button>
-                            </div>
-                        </div>
-                        <button class="add-to-cart-btn" onclick="addToCart('${product.id}')" ${isOutOfStock ? 'disabled' : ''}>
-                            ${isOutOfStock ? '⌚ Habis' : '🛒 Tambah ke Keranjang'}
-                        </button>
-                    </div>
-                `;
-                
-                galleryGrid.appendChild(galleryItem);
-            });
-        }
+		function changeQuantity(productId, change) {
+			const quantityInput = document.getElementById(`quantity-${productId}`);
+			let currentQuantity = parseInt(quantityInput.value);
+			const product = productGallery.find(p => p.id === productId);
+			
+			currentQuantity += change;
+			if (currentQuantity < 1) {
+				currentQuantity = 1;
+			}
+			if (currentQuantity > product.stockCount) {
+				currentQuantity = product.stockCount;
+				showNotification(`Stok ${product.title} hanya tersisa ${product.stockCount}`, true);
+			}
+			quantityInput.value = currentQuantity;
+		}
 
-        function filterGallery(category) {
-            renderGallery(category);
-            
-            document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
-            document.querySelector(`.category-btn[onclick="filterGallery('${category}')"]`).classList.add('active');
-        }
+		function addToCart(productId) {
+			const product = productGallery.find(p => p.id === productId);
+			const quantityInput = document.getElementById(`quantity-${productId}`);
+			const quantity = parseInt(quantityInput.value);
+			
+			if (product.stockCount === 0) {
+				showNotification('Produk ini sedang habis', true);
+				return;
+			}
+			
+			if (quantity > product.stockCount) {
+				showNotification(`Stok ${product.title} hanya tersisa ${product.stockCount}`, true);
+				return;
+			}
+			
+			const existingItem = cart.find(item => item.id === productId);
+			
+			if (existingItem) {
+				const newQuantity = existingItem.quantity + quantity;
+				if (newQuantity > product.stockCount) {
+					showNotification(`Total tidak boleh melebihi stok yang tersedia (${product.stockCount})`, true);
+					return;
+				}
+				existingItem.quantity = newQuantity;
+			} else {
+				cart.push({
+					id: productId,
+					title: product.title,
+					price: product.price,
+					unit: product.unit,
+					quantity: quantity,
+					image: product.image,
+					fallbackEmoji: product.fallbackEmoji
+				});
+			}
+			
+			updateCartCount();
+			showNotification(`${quantity} ${product.unit} ${product.title} ditambahkan ke keranjang!`);
+			quantityInput.value = 1;
+			
+			trackAddToCart(product.title, product.category, product.price, quantity);
+		}
 
-        function renderCartItems() {
-            cartItemsContainer.innerHTML = '';
-            let total = 0;
-            
-            if (cart.length === 0) {
-                emptyCartMessage.classList.remove('hidden');
-                document.querySelector('.cart-total').classList.add('hidden');
-            } else {
-                emptyCartMessage.classList.add('hidden');
-                document.querySelector('.cart-total').classList.remove('hidden');
-                
-                cart.forEach((item, index) => {
-                    const itemTotal = item.price * item.quantity;
-                    total += itemTotal;
-                    const itemDiv = document.createElement('div');
-                    itemDiv.classList.add('cart-item');
-                    itemDiv.innerHTML = `
-                        <div class="cart-item-info">
-                            <div class="cart-item-title">${item.title}</div>
-                            <div class="cart-item-details">${formatRupiah(item.price)}/${item.unit}</div>
-                            <div class="cart-item-quantity">
-                                <button class="cart-quantity-btn" onclick="updateCartItemQuantity(${index}, -1)">-</button>
-                                <span>${item.quantity} ${item.unit}</span>
-                                <button class="cart-quantity-btn" onclick="updateCartItemQuantity(${index}, 1)">+</button>
-                            </div>
-                        </div>
-                        <span class="cart-item-price">${formatRupiah(itemTotal)}</span>
-                        <button class="cart-item-remove" onclick="removeCartItem(${index})">Hapus</button>
-                    `;
-                    cartItemsContainer.appendChild(itemDiv);
-                });
-            }
-            cartTotalAmount.innerText = formatRupiah(total);
-        }
+		function renderGallery(filter = 'all') {
+			const galleryGrid = document.getElementById('galleryGrid');
+			galleryGrid.innerHTML = '';
+			
+			const filteredProducts = filter === 'all' 
+				? productGallery 
+				: productGallery.filter(product => product.category === filter);
+			
+			if (filter !== 'all') {
+				trackCategoryFilter(filter);
+			}
+			
+			filteredProducts.forEach(product => {
+				const galleryItem = document.createElement('div');
+				galleryItem.className = 'gallery-item';
+				galleryItem.dataset.category = product.category;
+				
+				const isOutOfStock = product.stockCount === 0;
+				
+				const descriptionHtml = `
+					<ul class="description-list">
+						${product.description.map(desc => `<li>${desc}</li>`).join('')}
+					</ul>
+				`;
+				
+				galleryItem.innerHTML = `
+					<div class="gallery-item-image">
+						<img src="${product.image}" alt="${product.title}" 
+							 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+						<div class="product-image-placeholder" style="display: none; font-size: 4rem; color: #adb5bd; display: flex; align-items: center; justify-content: center; height: 100%;">${product.fallbackEmoji}</div>
+						<div class="badges-container">${getBadges(product)}</div>
+						<button class="photo-gallery-btn" onclick="openGallery('${product.id}')" title="Lihat Galeri Foto">📷</button>
+					</div>
+					<div class="gallery-item-content">
+						<div class="item-category">${product.category}</div>
+						<h3 class="item-title">${product.title}</h3>
+						<div class="item-description">
+							${descriptionHtml}
+						</div>
+						<div class="item-price">${formatRupiah(product.price)}/${product.unit}</div>
+						<div class="quantity-selector">
+							<span class="quantity-label">Jumlah:</span>
+							<div class="quantity-controls">
+								<button class="quantity-btn" onclick="changeQuantity('${product.id}', -1)" ${isOutOfStock ? 'disabled' : ''}>-</button>
+								<input type="number" id="quantity-${product.id}" value="1" min="1" max="${product.stockCount}" class="quantity-input" ${isOutOfStock ? 'disabled' : ''}>
+								<button class="quantity-btn" onclick="changeQuantity('${product.id}', 1)" ${isOutOfStock ? 'disabled' : ''}>+</button>
+							</div>
+						</div>
+						<button class="add-to-cart-btn" onclick="addToCart('${product.id}')" ${isOutOfStock ? 'disabled' : ''}>
+							${isOutOfStock ? '⌚ Habis' : '🛒 Tambah ke Keranjang'}
+						</button>
+					</div>
+				`;
+				
+				galleryGrid.appendChild(galleryItem);
+			});
+		}
 
-        function updateCartItemQuantity(index, change) {
-            const item = cart[index];
-            const product = productGallery.find(p => p.id === item.id);
-            
-            item.quantity += change;
-            if (item.quantity <= 0) {
-                removeCartItem(index);
-            } else if (item.quantity > product.stockCount) {
-                item.quantity = product.stockCount;
-                showNotification(`Stok ${product.title} hanya tersisa ${product.stockCount}`, true);
-                renderCartItems();
-                updateCartCount();
-            } else {
-                renderCartItems();
-                updateCartCount();
-            }
-        }
+		function filterGallery(category) {
+			renderGallery(category);
+			
+			document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+			document.querySelector(`.category-btn[onclick="filterGallery('${category}')"]`).classList.add('active');
+		}
 
-        function removeCartItem(index) {
-            cart.splice(index, 1);
-            renderCartItems();
-            updateCartCount();
-        }
+		// ============================================
+		// CART FUNCTIONS
+		// ============================================
+		function renderCartItems() {
+			cartItemsContainer.innerHTML = '';
+			let total = 0;
+			
+			if (cart.length === 0) {
+				emptyCartMessage.classList.remove('hidden');
+				document.querySelector('.cart-total').classList.add('hidden');
+			} else {
+				emptyCartMessage.classList.add('hidden');
+				document.querySelector('.cart-total').classList.remove('hidden');
+				
+				cart.forEach((item, index) => {
+					const itemTotal = item.price * item.quantity;
+					total += itemTotal;
+					const itemDiv = document.createElement('div');
+					itemDiv.classList.add('cart-item');
+					itemDiv.innerHTML = `
+						<div class="cart-item-info">
+							<div class="cart-item-title">${item.title}</div>
+							<div class="cart-item-details">${formatRupiah(item.price)}/${item.unit}</div>
+							<div class="cart-item-quantity">
+								<button class="cart-quantity-btn" onclick="updateCartItemQuantity(${index}, -1)">-</button>
+								<span>${item.quantity} ${item.unit}</span>
+								<button class="cart-quantity-btn" onclick="updateCartItemQuantity(${index}, 1)">+</button>
+							</div>
+						</div>
+						<span class="cart-item-price">${formatRupiah(itemTotal)}</span>
+						<button class="cart-item-remove" onclick="removeCartItem(${index})">Hapus</button>
+					`;
+					cartItemsContainer.appendChild(itemDiv);
+				});
+			}
+			cartTotalAmount.innerText = formatRupiah(total);
+		}
 
-        function openCart() {
-            renderCartItems();
-            renderAdminSelection();
-            cartModal.style.display = 'block';
-        }
+		function updateCartItemQuantity(index, change) {
+			const item = cart[index];
+			const product = productGallery.find(p => p.id === item.id);
+			
+			item.quantity += change;
+			if (item.quantity <= 0) {
+				removeCartItem(index);
+			} else if (item.quantity > product.stockCount) {
+				item.quantity = product.stockCount;
+				showNotification(`Stok ${product.title} hanya tersisa ${product.stockCount}`, true);
+				renderCartItems();
+				updateCartCount();
+			} else {
+				renderCartItems();
+				updateCartCount();
+			}
+		}
 
-        function closeCart() {
-            cartModal.style.display = 'none';
-        }
+		function removeCartItem(index) {
+			cart.splice(index, 1);
+			renderCartItems();
+			updateCartCount();
+		}
 
-        function clearCart() {
-            cart = [];
-            renderCartItems();
-            updateCartCount();
-            showNotification('Keranjang belanja berhasil dikosongkan.');
-        }
+		function openCart() {
+			renderCartItems();
+			renderAdminSelection();
+			cartModal.style.display = 'block';
+		}
 
-        function checkout() {
-            if (cart.length === 0) {
-                showNotification('Keranjang Anda kosong. Tambahkan produk untuk checkout.', true);
-                return;
-            }
+		function closeCart() {
+			cartModal.style.display = 'none';
+		}
 
-            const selectedAdmin = adminList.find(admin => admin.phone === selectedAdminPhone);
-            let message = `Halo ${selectedAdmin.name}, saya ingin memesan produk berikut dari *SemuaAda*:\n\n`;
-            let total = 0;
+		function clearCart() {
+			cart = [];
+			renderCartItems();
+			updateCartCount();
+			showNotification('Keranjang belanja berhasil dikosongkan.');
+		}
 
-            cart.forEach(item => {
-                const itemTotal = item.price * item.quantity;
-                total += itemTotal;
-                message += `- ${item.quantity} ${item.unit} ${item.title} - ${formatRupiah(itemTotal)}\n`;
-            });
+		function checkout() {
+			if (cart.length === 0) {
+				showNotification('Keranjang Anda kosong. Tambahkan produk untuk checkout.', true);
+				return;
+			}
 
-            message += `\n*Total Belanja: ${formatRupiah(total)}*`;
-            message += `\n\nNama: [Isi nama Anda]\nAlamat: [Isi alamat Anda]\nCatatan: [Isi catatan tambahan jika ada]`;
+			const selectedAdmin = adminList.find(admin => admin.phone === selectedAdminPhone);
+			
+			// Warning jika admin offline
+			if (selectedAdmin.status === 'offline') {
+				const confirmOffline = confirm(
+					`⚠️ PERINGATAN!\n\n` +
+					`Admin ${selectedAdmin.name} sedang OFFLINE.\n` +
+					`${selectedAdmin.lastOnline ? `Terakhir online: ${selectedAdmin.lastOnline}\n` : ''}` +
+					`Pesan Anda mungkin tidak langsung dibalas.\n\n` +
+					`Apakah Anda yakin ingin melanjutkan?\n\n` +
+					`Tips: Pilih admin yang ONLINE untuk respons lebih cepat.`
+				);
+				
+				if (!confirmOffline) {
+					return;
+				}
+			}
+			
+			let message = `Halo ${selectedAdmin.name}, saya ingin memesan produk berikut dari *SemuaAda*:\n\n`;
+			let total = 0;
 
-            const whatsappUrl = `https://wa.me/${selectedAdminPhone}?text=${encodeURIComponent(message)}`;
-            
-            trackCheckout(total, cart.length);
-            
-            window.open(whatsappUrl, '_blank');
-        }
+			cart.forEach(item => {
+				const itemTotal = item.price * item.quantity;
+				total += itemTotal;
+				message += `- ${item.quantity} ${item.unit} ${item.title} - ${formatRupiah(itemTotal)}\n`;
+			});
 
-        document.addEventListener('DOMContentLoaded', () => {
-            updateCartCount();
-            renderGallery();
-        });
+			message += `\n*Total Belanja: ${formatRupiah(total)}*`;
+			message += `\n\nNama: [Isi nama Anda]\nAlamat: [Isi alamat Anda]\nCatatan: [Isi catatan tambahan jika ada]`;
 
-        window.onclick = function(event) {
-            if (event.target === cartModal) {
-                closeCart();
-            }
-            if (event.target === galleryModal) {
-                closeGallery();
-            }
-        }
+			const whatsappUrl = `https://wa.me/${selectedAdminPhone}?text=${encodeURIComponent(message)}`;
+			
+			trackCheckout(total, cart.length);
+			
+			window.open(whatsappUrl, '_blank');
+		}
+
+		// ============================================
+		// COUNTER ANIMATION - Efek Menghitung Angka
+		// ============================================
+
+		/**
+		 * Fungsi untuk animasi counter dari 0 ke target number
+		 * @param {HTMLElement} element - Element yang akan di-animate
+		 * @param {number} target - Angka target
+		 * @param {number} duration - Durasi animasi dalam milidetik
+		 * @param {string} suffix - Suffix seperti "+" atau "%"
+		 */
+		function animateCounter(element, target, duration = 2000, suffix = '+') {
+			let startTime = null;
+			const startValue = 0;
+			
+			function animation(currentTime) {
+				if (!startTime) startTime = currentTime;
+				const progress = Math.min((currentTime - startTime) / duration, 1);
+				
+				// Easing function - ease out untuk efek lebih natural
+				const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+				const currentValue = Math.floor(easeOutQuart * (target - startValue) + startValue);
+				
+				element.textContent = currentValue + suffix;
+				
+				if (progress < 1) {
+					requestAnimationFrame(animation);
+				} else {
+					element.textContent = target + suffix;
+				}
+			}
+			
+			requestAnimationFrame(animation);
+		}
+
+		/**
+		 * Intersection Observer untuk trigger animasi saat section terlihat
+		 */
+		function initCounterAnimation() {
+			const statsSection = document.querySelector('.hero-stats');
+			
+			if (!statsSection) return;
+			
+			const observerOptions = {
+				threshold: 0.5, // Trigger saat 50% section terlihat
+				rootMargin: '0px'
+			};
+			
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+						// Tandai sudah di-animate agar tidak repeat
+						entry.target.classList.add('animated');
+						
+						// Animate semua counter
+						const counters = entry.target.querySelectorAll('.stat-number');
+						
+						counters.forEach(counter => {
+							const target = parseInt(counter.getAttribute('data-target'));
+							const suffix = counter.getAttribute('data-suffix') || '+';
+							const duration = parseInt(counter.getAttribute('data-duration')) || 2000;
+							
+							animateCounter(counter, target, duration, suffix);
+						});
+					}
+				});
+			}, observerOptions);
+			
+			observer.observe(statsSection);
+		}
+
+		// ============================================
+		// INITIALIZATION
+		// ============================================
+		document.addEventListener('DOMContentLoaded', () => {
+			updateCartCount();
+			renderGallery();
+			initCounterAnimation(); // ← TAMBAHKAN INI
+		});
+
+		window.onclick = function(event) {
+			if (event.target === cartModal) {
+				closeCart();
+			}
+			if (event.target === galleryModal) {
+				closeGallery();
+			}
+		}
     </script>
 
 </body>
