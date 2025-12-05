@@ -693,6 +693,29 @@
             left: 0;
             font-size: 0.8rem;
         }
+		
+		/* Video section styles */
+        .item-video {
+            margin-bottom: 1rem;
+        }
+
+        .video-link {
+            display: inline-block;
+            background: #ff4458;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-bottom: 0.5rem;
+        }
+
+        .video-link:hover {
+            background: #e33d4a;
+            transform: translateY(-1px);
+        }
 
         .item-price {
             font-size: 1.4rem;
@@ -1791,8 +1814,8 @@
 				stockCount: 50,
 				isPromo: false,
 				isNew: true,
-				videoUrl: '',
-				hasVideo: false,
+				videoUrl: 'https://www.youtube.com/watch?v=BBxC_tqT1z0',
+				hasVideo: true,
 				photos: [
 					{ url: 'images/laundry/laundry2.jpeg', caption: 'Setrika Listrik' },
 					{ url: 'images/laundry/laundry3.jpeg', caption: 'Setrika Uap' },
@@ -1839,8 +1862,8 @@
 				stockCount: 0,
 				isPromo: false,
 				isNew: true,
-				videoUrl: '',
-				hasVideo: false,
+				videoUrl: 'https://www.youtube.com/watch?v=BBxC_tqT1z0',
+				hasVideo: true,
 				photos: [
 					{ url: 'images/olahan/cireng2.jpeg', caption: 'Cireng Ayam Pedas' }
 				]
@@ -2087,6 +2110,14 @@
 					</ul>
 				`;
 				
+				const videoHtml = product.hasVideo && product.videoUrl ? `
+                    <div class="item-video">
+                        <a href="${product.videoUrl}" target="_blank" class="video-link">
+                            ▶️ Tonton Video Produk
+                        </a>
+                    </div>
+                ` : '';
+				
 				galleryItem.innerHTML = `
 					<div class="gallery-item-image">
 						<img src="${product.image}" alt="${product.title}" 
@@ -2101,6 +2132,7 @@
 						<div class="item-description">
 							${descriptionHtml}
 						</div>
+						${videoHtml}
 						<div class="item-price">${formatRupiah(product.price)}/${product.unit}</div>
 						<div class="quantity-selector">
 							<span class="quantity-label">Jumlah:</span>
